@@ -9,3 +9,11 @@ function showData(){
     })
     .catch((error) => alert("Error: "+error));
 }
+
+function upload(){
+    fetch("/upload", {
+        method: "POST",
+        body: namebox.value
+    })
+    .catch((error) => alert("Error: "+error));
+}
